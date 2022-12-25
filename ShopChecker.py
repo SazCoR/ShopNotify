@@ -7,9 +7,7 @@ from selenium.webdriver.common.by import By
 import time
 import json
 import telepot
-from pyvirtualdisplay import Display
-display = Display(visible=0, size=(800, 800))  
-display.start()
+
 
 
 class Producto:
@@ -19,6 +17,7 @@ class Producto:
 
 
 options = webdriver.ChromeOptions()
+options.add_argument('--no-sandbox')
 options.add_experimental_option("useAutomationExtension", False)
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
 
