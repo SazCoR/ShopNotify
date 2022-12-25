@@ -136,8 +136,8 @@ def closeCurrentTab(driver):
 
 def main():
     while True:
-        impalaVintage('impalaVintage.json')
-        time.sleep(20)
+        impalaVintage('ImpalaVintage.json')
+        time.sleep(120)
 
 if __name__ == "__main__":
     main()
